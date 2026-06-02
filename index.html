@@ -40,7 +40,7 @@
       var q=new URLSearchParams(getUtms()).toString();
       el.href=R+(q?"?"+q:"");
       el.addEventListener("click",function(){
-        if(typeof fbq!=="undefined") fbq('trackCustom','TrackOut');
+        if(typeof fbq!=="undefined") fbq('track','CompleteRegistration');
       },true);
     });
   }
